@@ -49,7 +49,7 @@ function connectServerEndpoint() {
         writeToScreen(evt);
     };
     websocket.onerror = function (evt) {
-        console.create("error : " + evt);
+        console.log("WebSocket Error : " + evt);
     };
     websocket.onclose = function (evt) {
         closeServerEndpoint();
